@@ -69,16 +69,22 @@ body {
     width: 100%;
     padding: 10px 0;
     text-align: center;
+    justify-content: left;
 
 }
 
 .nav-name {
-    margin-right: 200px;
-    text-align: center;
+    margin-left: 100px;
+    text-align: left;
+    width: 20%;
+
 }
 
 .nav-list {
+    margin-right: 100px;
+    text-align: right;
     float: left;
+    width: 80%;
 }
 
 ol {
@@ -101,6 +107,7 @@ ol > li {
     float: left;
     width: 150px;
     height: 40px;
+    text-align: center;
 }
 
 ol > li:first-child {
