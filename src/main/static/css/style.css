@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-    width: 100%;
+    width: 1920px;
 }
 
 .nav {
@@ -22,15 +22,15 @@ body {
     justify-content: center;
 }
 
-.container {
+.slider {
     padding-left: 0;
     padding-right: 0;
     width: 100%;
-
-    background: #222;
+    background: #fffff0;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .slide-container {
@@ -48,6 +48,7 @@ body {
 .swiper {
     width: 100%;
     height: fit-content;
+
 }
 
 .swiper-slide img {
@@ -145,4 +146,96 @@ ol > li > ul > li:hover {
 
 ol > li > ul > li:hover > a {
     color: black;
+}
+
+.big-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.article {
+    display: inline-block;
+    width: 28%;
+    text-align: center;
+    padding: 3%;
+    background-color: #fffff0;
+
+}
+
+.article-in {
+    background-color: white;
+    transition: transform 0.2s;
+    box-shadow: 3px 2px 2px black;
+    border: solid 1px black;
+}
+
+.article-in:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    text-align: left;
+    padding: 5px;
+}
+
+p {
+    padding: 5px;
+    text-align: left;
+}
+
+.button-show {
+    text-align: center;
+}
+
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.btn:hover, .btn:focus {
+    color: black;
+    outline: 0;
+}
+
+.third {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    transition: all 150ms ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.third:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
