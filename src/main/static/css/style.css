@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-    width: 1920px;
+    width: 100%;
 }
 
 .nav {
@@ -161,7 +161,8 @@ ol > li > ul > li:hover > a {
     width: 100%;
     text-align: center;
     padding: 0;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
+
 }
 
 .article {
@@ -170,10 +171,14 @@ ol > li > ul > li:hover > a {
     text-align: center;
     padding: 3%;
     background-color: #fffff0;
+height: 525px;
 
 }
 
 .article-in {
+    display: flex;
+    position: relative;
+    height: 100%;
     background-color: white;
     transition: transform 0.2s;
     box-shadow: 5px 3px 3px gray;
@@ -190,8 +195,45 @@ h2 {
 }
 
 p {
-    padding: 5px;
+    padding-left: 10px;
+
     text-align: left;
+}
+
+.open-popup{
+
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    padding-top: 20px;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    overflow: auto;
+
+}
+
+h2{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.article-in img{
+    max-width: 100%;
+    height: 300px;
+}
+.p-popup{
+
+    background: white;
+    padding-left: 10px;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .button-show {
@@ -213,7 +255,7 @@ p {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1;
-    margin: 20px;
+    margin-top: 30px;
     padding: 1.2em 2.8em;
     text-decoration: none;
     text-align: center;
