@@ -1,20 +1,29 @@
-let buttonShow = document.querySelector('#home-show');
+let buttonShowHome = document.querySelector('#home-show');
+let buttonShowDruty = document.querySelector('#druty-show');
+let buttonShowRobotki = document.querySelector('#robotki-show');
+let articleHome = document.querySelector('.dodo1');
+let articleDruty = document.querySelector('.dodo2');
+let articleRobotki = document.querySelector('.dodo3');
 
 
-let dod1 = document.querySelector('#dodo1');
-let dod2 = document.querySelector('#dodo2');
-
-
-buttonShow.addEventListener('click', event => {
-    if (buttonShow.textContent === "Pokaż więcej") {
-        dod1.style.display = "inline-block";
-        dod2.style.display = "inline-block";
-        buttonShow.textContent = "Zwiń"
-    }else {
-        dod1.style.display = "none";
-        dod2.style.display = "none";
-        buttonShow.textContent = "Pokaż więcej"
+function toggleDiv(toggleBtn, myDiv) {
+    if (myDiv.style.display === "block") {
+        myDiv.style.display = "none";
+        toggleBtn.innerHTML = "Pokaż";
+    } else {
+        myDiv.style.display = "block";
+        toggleBtn.innerHTML = "Ukryj";
     }
+}
 
-})
+buttonShowHome.addEventListener("click", function() {
+    toggleDiv(buttonShowHome, articleHome);
+});
+buttonShowDruty.addEventListener("click", function() {
+    toggleDiv(buttonShowDruty, articleDruty);
+});
+buttonShowRobotki.addEventListener("click", function() {
+    toggleDiv(buttonShowRobotki, articleRobotki);
+});
+
 
